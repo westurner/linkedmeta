@@ -51,7 +51,7 @@ lint: ## check style with flake8
 	flake8 linkedmeta tests
 
 test: ## run tests quickly with the default Python
-	pytest
+	pytest -v --cov=linkedmeta --cov-report=term-missing
 
 test-all: ## run tests on every Python version with tox
 	tox
